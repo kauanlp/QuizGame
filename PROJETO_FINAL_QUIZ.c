@@ -8,8 +8,8 @@
 #include <conio.h>
 
 /*
-	Caso apareÁa o erro C99 no compilador, v· em Ferramentas(Tools) --> 
-	OpÁıes de Compilador...(Compiler Options...) --> No primeiro campo marque a caixa e digite: -std=c99
+	Caso apare√ßa o erro C99 no compilador, v√° em Ferramentas(Tools) --> 
+	Op√ß√µes de Compilador...(Compiler Options...) --> No primeiro campo marque a caixa e digite: -std=c99
 	Obrigado!
 */
 
@@ -40,25 +40,25 @@ verificaResposta contadores(verificaResposta todosNiveis, char resposta, char re
 
 int main(){
 	setlocale(LC_ALL, "portuguese");
-	int hora[10], minuto[10], segundo[10], pontuacaoTotal[10], auxHorario = 1, pontuacao;
+	int hora[10], minuto[10], segundo[10], pontuacaoTotal[10], auxHorario = 1;
 	char modoJogo[10];
     int opcao;
 	do{
 	
 	    printf("    *------------------------------------------------------*\n");
-	    printf("    |                     MENU DE OP«√O                    |\n");
+	    printf("    |                     MENU DE OP√á√ÉO                    |\n");
 	    printf("    *------------------------------------------------------*\n");
 	    printf("    |   0 - SAIR DO JOGO                                   |\n");  
-	    printf("    |   1 - JOGAR TODOS OS NÕVEIS                          |\n");
-	    printf("    |   2 - JOGAR NÕVEL F¡CIL - SOMENTE O NÕVEL F¡CIL      |\n");
-	    printf("    |   3 - JOGAR NÕVEL M…DIO - SOMENTE O NÕVEL M…DIO      |\n");
-	    printf("    |   4 - JOGAR NÕVEL DIFÕCIL - SOMENTE O NÕVEL DIFÕCIL  |\n");
-	    printf("    |   5 - HIST”RICO DE JOGADAS                           |\n");    
-	    printf("    |   6 - VER INSTRU«’ES DO JOGO E INFORMA«’ES           |\n");
+	    printf("    |   1 - JOGAR TODOS OS N√çVEIS                          |\n");
+	    printf("    |   2 - JOGAR N√çVEL F√ÅCIL - SOMENTE O N√çVEL F√ÅCIL      |\n");
+	    printf("    |   3 - JOGAR N√çVEL M√âDIO - SOMENTE O N√çVEL M√âDIO      |\n");
+	    printf("    |   4 - JOGAR N√çVEL DIF√çCIL - SOMENTE O N√çVEL DIF√çCIL  |\n");
+	    printf("    |   5 - HIST√ìRICO DE JOGADAS                           |\n");    
+	    printf("    |   6 - VER INSTRU√á√ïES DO JOGO E INFORMA√á√ïES           |\n");
 	    printf("    |   7 - VER OS DESENVOLVEDORES                         |\n");
 	    printf("    *------------------------------------------------------*\n\n");
 	
-	    printf("    Digite uma opÁ„o: ");  
+	    printf("    Digite uma op√ß√£o: ");  
 	
 	    scanf("%d", &opcao);   
 	
@@ -101,18 +101,18 @@ int main(){
 	            //--------HORARIO-------//
 	            
 	
-	            printf("\n	VOC  SELECIONOU - JOGAR TODOS OS NÕVEIS\n");
+	            printf("\n	VOC√ä SELECIONOU - JOGAR TODOS OS N√çVEIS\n");
 	            
 	            //----------- Chamada do nome(usuario do win) -------------//
 				char username[UNLEN + 1];
 	            DWORD username_len = UNLEN + 1;
 	            GetUserName(username, &username_len);
 	
-	            printf("\n	Ol· %s, seja bem vindo\n\n", username);
+	            printf("\n	Ol√° %s, seja bem vindo\n\n", username);
 	            //----------- Chamada do nome(usuario do win) -------------//
 	            
-	            printf("    Este È um jogo de perguntas e respostas. O jogador(a) dever· escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
-	            printf("    Para mais informaÁıes, acesse a opÁ„o INSTRU«’ES de menu do jogo\n\n\n");
+	            printf("    Este √© um jogo de perguntas e respostas. O jogador(a) dever√° escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
+	            printf("    Para mais informa√ß√µes, acesse a op√ß√£o INSTRU√á√ïES de menu do jogo\n\n\n");
 				    
 				char tecla;
 				    
@@ -125,13 +125,13 @@ int main(){
 				}
          
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 01 - NÌvel F·cil  |\n");
+	            printf("|  PERGUNTA n. 01 - N√≠vel F√°cil  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("LaboratÛrio de AutomaÁ„o: Qual È a ·rea da fÌsica que utiliza de gases pressurizados para executar um trabalho?\n\n");
-	            printf("A) Hidr·ulica\n");
-	            printf("B) Pneum·tica\n");
-	            printf("C) ElÈtrica\n");           
+	            printf("Laborat√≥rio de Automa√ß√£o: Qual √© a √°rea da f√≠sica que utiliza de gases pressurizados para executar um trabalho?\n");
+	            printf("A) Hidr√°ulica\n");
+	            printf("B) Pneum√°tica\n");
+	            printf("C) El√©trica\n");           
 	            printf("D) Diodo Zener\n");
 	            printf("---------------------------------\n");
 	            printf("Resposta? ");
@@ -144,11 +144,11 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	        
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 02 - NÌvel MÈdio  |\n");
+	            printf("|  PERGUNTA n. 02 - N√≠vel M√©dio  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("Redes e Protocolos Industriais: … o tipo de transmiss„o de dados bidirecional.A e B podem transmitir e receber dados ao mesmo tempo:\n");
-				printf("Escolha uma opÁ„o:?\n\n");
+	            printf("Redes e Protocolos Industriais: √â o tipo de transmiss√£o de dados bidirecional.A e B podem transmitir e receber dados ao mesmo tempo:\n");
+				printf("Escolha uma op√ß√£o:?\n\n");
 	
 	            printf("A) Simplex\n");
 	            printf("B) Half-duplex\n");
@@ -166,10 +166,10 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	
 	            printf("*--------------------------------*\n");
-	            printf("| PERGUNTA n. 03 - NÌvel DifÌcil |\n");
+	            printf("| PERGUNTA n. 03 - N√≠vel Dif√≠cil |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("InstrumentaÁ„o Industrial: Qual È o sensor mais adequado para medir, por contato direto, temperatura na faixa de 200 ∞C,apresentando, como caracterÌstica, alta linearidade?\n\n");
+	            printf("Instrumenta√ß√£o Industrial: Qual √© o sensor mais adequado para medir, por contato direto, temperatura na faixa de 200 ¬∞C,apresentando, como caracter√≠stica, alta linearidade?\n\n");
 	
 	            printf("A) Termopar\n");
 	            printf("B) RTD\n");
@@ -185,10 +185,10 @@ int main(){
 				
 	            printf("\n---------------------------------\n\n");
 	
-	            printf("TODOS OS NÕVEIS\n\n");
+	            printf("TODOS OS N√çVEIS\n\n");
 	            printf("Acertos: %d\n", todosNiveisFacil.acertos + todosNiveisMedio.acertos + todosNiveisDificil.acertos);
 	            printf("Erros: %d\n", todosNiveisFacil.erros + todosNiveisMedio.erros + todosNiveisDificil.erros);
-	            printf("PontuaÁ„o: %d\n\n", todosNiveisFacil.pontuacao + todosNiveisMedio.pontuacao + todosNiveisDificil.pontuacao);
+	            printf("Pontua√ß√£o: %d\n\n", todosNiveisFacil.pontuacao + todosNiveisMedio.pontuacao + todosNiveisDificil.pontuacao);
 	            printf("_______PARTIDA FINALIZADA_______\n\n");
 	            
 	            pontuacaoTotal[auxHorario] = (todosNiveisFacil.pontuacao + todosNiveisMedio.pontuacao + todosNiveisDificil.pontuacao);
@@ -218,22 +218,22 @@ int main(){
 	            segundo[auxHorario] = tempo.tm_sec;
 	            //--------HORARIO-------//
 	            
-	            printf("\n	VOC  SELECIONOU - JOGAR NÕVEL F¡CIL\n");
+	            printf("\n	VOC√ä SELECIONOU - JOGAR N√çVEL F√ÅCIL\n");
 	            
 	            //----------- Chamada do nome(usuario do win) -------------//
 				char username[UNLEN + 1];
 	            DWORD username_len = UNLEN + 1;
 	            GetUserName(username, &username_len);
 	
-	            printf("\n	Ol· %s, seja bem vindo\n\n", username);
+	            printf("\n	Ol√° %s, seja bem vindo\n\n", username);
 	            //----------- Chamada do nome(usuario do win) -------------//
 	            
-	            printf("    Este È um jogo de perguntas e respostas. O jogador(a) dever· escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
-	            printf("    Para mais informaÁıes, acesse a opÁ„o INSTRU«’ES de menu do jogo\n\n\n");
+	            printf("    Este √© um jogo de perguntas e respostas. O jogador(a) dever√° escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
+	            printf("    Para mais informa√ß√µes, acesse a op√ß√£o INSTRU√á√ïES de menu do jogo\n\n\n");
 	
 	            char tecla;
 				    
-				printf("PRESSIONE ENTER PARA COME«AR...");
+				printf("PRESSIONE ENTER PARA COME√áAR...");
 				tecla = getch();
 				printf("\n\n");       
 				
@@ -242,10 +242,10 @@ int main(){
 				}
 				
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 01 - NÌvel F·cil  |\n");
+	            printf("|  PERGUNTA n. 01 - N√≠vel F√°cil  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("Comandos ElÈtricos: As siglas NA e NF representam respectivamente:\n\n");
+	            printf("Comandos El√©tricos: As siglas NA e NF representam respectivamente:\n\n");
 	
 	            printf("A) Normalmente Aberta e Normalmente fechada\n");
 	            printf("B) Normalmente fechada e Normalmente aberta\n");
@@ -262,10 +262,10 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	        
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 02 - NÌvel F·cil  |\n");
+	            printf("|  PERGUNTA n. 02 - N√≠vel F√°cil  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("OrganizaÁ„o Sa˙de e SeguranÁa: A revoluÁ„o industrial favoreceu o desenvolvimento do __________.\n\n");
+	            printf("Organiza√ß√£o Sa√∫de e Seguran√ßa: A revolu√ß√£o industrial favoreceu o desenvolvimento do __________.\n\n");
 	
 	            printf("A) Iluminismo\n");
 	            printf("B) Capitalismo\n");
@@ -283,10 +283,10 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	
 	            printf("*--------------------------------*\n");
-	            printf("| PERGUNTA n. 03 - NÌvel F·cil |\n");
+	            printf("| PERGUNTA n. 03 - N√≠vel F√°cil |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("Eletricidade: Qual È a fÛrmula do c·lculo de Volts.\n\n");
+	            printf("Eletricidade: Qual √© a f√≥rmula do c√°lculo de Volts.\n\n");
 	
 	            printf("A) V = I . T\n");
 	            printf("B) V = P . R\n");
@@ -302,14 +302,14 @@ int main(){
 				
 	            printf("\n---------------------------------\n\n");
 	
-	            printf("NÕVEL F¡CIL\n\n");
+	            printf("N√çVEL F√ÅCIL\n\n");
 	            printf("Acertos: %d\n", contadorFacil.acertos);
 	            printf("Erros: %d\n", contadorFacil.erros);
-	            printf("PontuaÁ„o: %d\n\n", contadorFacil.pontuacao);
+	            printf("Pontua√ß√£o: %d\n\n", contadorFacil.pontuacao);
 	        	printf("_______PARTIDA FINALIZADA_______\n\n");
 	            
 	            pontuacaoTotal[auxHorario] = contadorFacil.pontuacao;
-	            strcpy(modo_de_jogo[auxHorario].nome, "NÌvel F·cil");
+	            strcpy(modo_de_jogo[auxHorario].nome, "N√≠vel F√°cil");
 	            auxHorario += 1;
 	            break;
 	        }
@@ -334,22 +334,22 @@ int main(){
 	            segundo[auxHorario] = tempo.tm_sec;
 	            //--------HORARIO-------//
 	            
-	            printf("\n	VOC  SELECIONOU - JOGAR NÕVEL M…DIO\n");
+	            printf("\n	VOC√ä SELECIONOU - JOGAR N√çVEL M√âDIO\n");
 	            
 	            //----------- Chamada do nome(usuario do win) -------------//
 				char username[UNLEN + 1];
 	            DWORD username_len = UNLEN + 1;
 	            GetUserName(username, &username_len);
 	
-	            printf("\n	Ol· %s, seja bem vindo\n\n", username);
+	            printf("\n	Ol√° %s, seja bem vindo\n\n", username);
 	            //----------- Chamada do nome(usuario do win) -------------//
 	            
-	            printf("    Este È um jogo de perguntas e respostas. O jogador(a) dever· escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
-	            printf("    Para mais informaÁıes, acesse a opÁ„o INSTRU«’ES de menu do jogo\n\n\n");
+	            printf("    Este √© um jogo de perguntas e respostas. O jogador(a) dever√° escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
+	            printf("    Para mais informa√ß√µes, acesse a op√ß√£o INSTRU√á√ïES de menu do jogo\n\n\n");
 	
 	           	char tecla;
 				    
-				printf("PRESSIONE ENTER PARA COME«AR...");
+				printf("PRESSIONE ENTER PARA COME√áAR...");
 				tecla = getch();
 				printf("\n\n");       
 				
@@ -358,14 +358,14 @@ int main(){
 				}        
 				
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 01 - NÌvel MÈdio  |\n");
+	            printf("|  PERGUNTA n. 01 - N√≠vel M√©dio  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("InstrumenÁ„o Industrial: Marque a alternativa que n„o corresponde a uma vantagem do emprego de instrumentos no controle de processos.\n\n");
+	            printf("Instrumen√ß√£o Industrial: Marque a alternativa que n√£o corresponde a uma vantagem do emprego de instrumentos no controle de processos.\n\n");
 	            printf("A) Proporciona maior qualidade e uniformidade no produto final.\n");
-	            printf("B) H· um aumento na necessidade de m„o de obra e, consequentemente, aumento de produÁ„o. \n");
-	            printf("C) ReduÁ„o de efeitos nocivos ao meio ambiente.\n");           
-	            printf("D) Substitui oper·rios nos trabalhos realizados em ambientes agressivos.\n");
+	            printf("B) H√° um aumento na necessidade de m√£o de obra e, consequentemente, aumento de produ√ß√£o. \n");
+	            printf("C) Redu√ß√£o de efeitos nocivos ao meio ambiente.\n");           
+	            printf("D) Substitui oper√°rios nos trabalhos realizados em ambientes agressivos.\n");
 	            printf("---------------------------------\n");
 	            printf("Resposta? ");
 	            scanf(" %c", &respostaUsuario);
@@ -377,15 +377,15 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	        
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 02 - NÌvel MÈdio  |\n");
+	            printf("|  PERGUNTA n. 02 - N√≠vel M√©dio  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("ProgramaÁ„o: Qual È a principal diferenÁa entre as estruturas de loop While e Do While.\n\n");
+	            printf("Programa√ß√£o: Qual √© a principal diferen√ßa entre as estruturas de loop While e Do While.\n\n");
 	
 	            printf("A) While primeiro executa para depois verificar, enquanto o Do While primeiro verifica para depois executar\n");
-	            printf("B) While precisa de um contador e o Do while n„o\n");
+	            printf("B) While precisa de um contador e o Do while n√£o\n");
 	            printf("C) Do While primeiro executa para depois verificar, enquanto o While primeiro verifica para depois executar\n");           
-	            printf("D) Todas as alternativas est„o incorretas\n");
+	            printf("D) Todas as alternativas est√£o incorretas\n");
 	            
 	            printf("---------------------------------\n");
 	            printf("Resposta? ");
@@ -398,14 +398,14 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	
 	            printf("*--------------------------------*\n");
-	            printf("| PERGUNTA n. 03 - NÌvel MÈdio |\n");
+	            printf("| PERGUNTA n. 03 - N√≠vel M√©dio |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("EletrÙnica AnalÛgica: O Dispositivo que emite um sinal de saÌda padronizado modificado, em relaÁ„o ‡ natureza do correspondente sinal de entrada, tambÈm padronizado, È conhecido como\n\n");
+	            printf("Eletr√¥nica Anal√≥gica: O Dispositivo que emite um sinal de sa√≠da padronizado modificado, em rela√ß√£o √† natureza do correspondente sinal de entrada, tamb√©m padronizado, √© conhecido como\n\n");
 	            
 	            printf("A) conversor.\n");
 	            printf("B) transmissor.\n");
-	            printf("C) v·lvula de controle.\n");           
+	            printf("C) v√°lvula de controle.\n");           
 	            printf("D) chave.\n");
 	            printf("---------------------------------\n");
 	            printf("Resposta? ");
@@ -417,15 +417,15 @@ int main(){
 
 	            printf("\n---------------------------------\n\n");
 	
-	            printf("NÕVEL M…DIO\n\n");
+	            printf("N√çVEL M√âDIO\n\n");
 	            printf("Acertos: %d\n", contadorMedio.acertos);
 	            printf("Erros: %d\n", contadorMedio.erros);
-	            printf("PontuaÁ„o: %d\n\n", contadorMedio.pontuacao);
+	            printf("Pontua√ß√£o: %d\n\n", contadorMedio.pontuacao);
 	        	printf("_______PARTIDA FINALIZADA_______\n\n");
 	            
 	            pontuacaoTotal[auxHorario] = contadorMedio.pontuacao;
 	            
-				strcpy(modo_de_jogo[auxHorario].nome, "NÌvel MÈdio");
+				strcpy(modo_de_jogo[auxHorario].nome, "N√≠vel M√©dio");
 	            auxHorario += 1;
 	            break;
 	        }
@@ -450,22 +450,22 @@ int main(){
 	            segundo[auxHorario] = tempo.tm_sec;
 	            //--------HORARIO-------//
 	            
-	            printf("\n	VOC  SELECIONOU - JOGAR NÕVEL DIFÕCIL\n");
+	            printf("\n	VOC√ä SELECIONOU - JOGAR N√çVEL DIF√çCIL\n");
 	            
 	            //----------- Chamada do nome(usuario do win) -------------//
 				char username[UNLEN + 1];
 	            DWORD username_len = UNLEN + 1;
 	            GetUserName(username, &username_len);
 	
-	            printf("\n	Ol· %s, seja bem vindo\n\n", username);
+	            printf("\n	Ol√° %s, seja bem vindo\n\n", username);
 	            //----------- Chamada do nome(usuario do win) -------------//
 	            
-	            printf("    Este È um jogo de perguntas e respostas. O jogador(a) dever· escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
-	            printf("    Para mais informaÁıes, acesse a opÁ„o INSTRU«’ES de menu do jogo\n\n\n");
+	            printf("    Este √© um jogo de perguntas e respostas. O jogador(a) dever√° escolher,\ndentre as 4 alternativas apenas uma e em seguida pressionar 'enter'\n\n");
+	            printf("    Para mais informa√ß√µes, acesse a op√ß√£o INSTRU√á√ïES de menu do jogo\n\n\n");
 	
 				char tecla;
 				    
-				printf("PRESSIONE ENTER PARA COME«AR...");
+				printf("PRESSIONE ENTER PARA COME√áAR...");
 				tecla = getch();
 				printf("\n\n");       
 				
@@ -474,14 +474,14 @@ int main(){
 				}
 				       
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 01 - NÌvel DifÌcil  |\n");
+	            printf("|  PERGUNTA n. 01 - N√≠vel Dif√≠cil  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("Mec‚nica dos Fluidos: Em relaÁ„o aos combustÌveis e lubrificantes, assinale a alternativa INCORRETA.\n\n");
+	            printf("Mec√¢nica dos Fluidos: Em rela√ß√£o aos combust√≠veis e lubrificantes, assinale a alternativa INCORRETA.\n\n");
 	            printf("A) A viscosidade aumenta com o aumento da temperatura.\n");
-	            printf("B) Quanto menores forem as folgas, menor dever· ser a viscosidade lubrificante para que o Ûleo possa penetrar nelas.\n");
-	            printf("C) A maioria dos combustÌveis contÈm hidrogÍnio, que forma ·gua quando queimado. O poder calorÌfico È denominado inferior quando a ·gua È liberada sob a forma de vapor.\n");           
-	            printf("D) Quanto maior a velocidade, menor deve ser a viscosidade do lubrificante, pois a formaÁ„o da pelÌcula lubrificante È mais f·cil.\n");
+	            printf("B) Quanto menores forem as folgas, menor dever√° ser a viscosidade lubrificante para que o √≥leo possa penetrar nelas.\n");
+	            printf("C) A maioria dos combust√≠veis cont√©m hidrog√™nio, que forma √°gua quando queimado. O poder calor√≠fico √© denominado inferior quando a √°gua √© liberada sob a forma de vapor.\n");           
+	            printf("D) Quanto maior a velocidade, menor deve ser a viscosidade do lubrificante, pois a forma√ß√£o da pel√≠cula lubrificante √© mais f√°cil.\n");
 	            printf("---------------------------------\n");
 	            printf("Resposta? ");
 	            scanf(" %c", &respostaUsuario);
@@ -493,10 +493,10 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	        
 	            printf("*--------------------------------*\n");
-	            printf("|  PERGUNTA n. 02 - NÌvel DifÌcil  |\n");
+	            printf("|  PERGUNTA n. 02 - N√≠vel Dif√≠cil  |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("M·quinas ElÈtricas: O transformador ideal abaixo piossui 300 espiras no prim·rio e 1200 espiras no secund·rio. Determine a tens„o do sencud·rio. Dados: v1 = 10v\n\n");
+	            printf("M√°quinas El√©tricas: O transformador ideal abaixo piossui 300 espiras no prim√°rio e 1200 espiras no secund√°rio. Determine a tens√£o do sencud√°rio. Dados: v1 = 10v\n\n");
 	
 	            printf("A) 22v\n");
 	            printf("B) 20v\n");
@@ -514,15 +514,15 @@ int main(){
 	            printf("\n---------------------------------\n\n");
 	
 	            printf("*--------------------------------*\n");
-	            printf("| PERGUNTA n. 03 - NÌvel DifÌcil |\n");
+	            printf("| PERGUNTA n. 03 - N√≠vel Dif√≠cil |\n");
 	            printf("*--------------------------------*\n\n");
 	
-	            printf("EletrÙnica Digital: Circuitos que s„o utilizados nos casos em que necessitamos enviar um certo n˙mero de informaÁıes, contidas em v·rios canais, a um sÛ canal, s„o chamados de:\n\n");
+	            printf("Eletr√¥nica Digital: Circuitos que s√£o utilizados nos casos em que necessitamos enviar um certo n√∫mero de informa√ß√µes, contidas em v√°rios canais, a um s√≥ canal, s√£o chamados de:\n\n");
 	
 	            printf("A) Demultiplexadores (DEMUX)\n");
 	            printf("B) Somadores\n");
 	            printf("C) Multiplexadores (MUX)\n");           
-	            printf("D) Nenhuma alternativa est· correta\n");
+	            printf("D) Nenhuma alternativa est√° correta\n");
 	            printf("---------------------------------\n");
 	            printf("Resposta? ");
 	            scanf(" %c", &respostaUsuario);
@@ -533,15 +533,15 @@ int main(){
 
 	            printf("\n---------------------------------\n\n");
 	
-	            printf("NÕVEL DIFÕCIL\n\n");
+	            printf("N√çVEL DIF√çCIL\n\n");
 	            printf("Acertos: %d\n", contadorDificil.acertos);
 	            printf("Erros: %d\n", contadorDificil.erros);
-	            printf("PontuaÁ„o: %d\n\n", contadorDificil.pontuacao);
+	            printf("Pontua√ß√£o: %d\n\n", contadorDificil.pontuacao);
 	        	printf("_______PARTIDA FINALIZADA_______\n\n");
 	            
 	            pontuacaoTotal[auxHorario] = contadorDificil.pontuacao;
 	            
-				strcpy(modo_de_jogo[auxHorario].nome, "NÌvel DifÌcil");
+				strcpy(modo_de_jogo[auxHorario].nome, "N√≠vel Dif√≠cil");
 	            auxHorario += 1;
 	                        
 	            break;
@@ -561,7 +561,7 @@ int main(){
 	        	}
 	        	
 	        	if(auxHorario == 1){
-	        		printf("	N„o H· jogadas para serem registradas.\n");
+	        		printf("	N√£o H√° jogadas para serem registradas.\n");
 				}
 	        	
 	        	printf("\n\n");
@@ -570,24 +570,21 @@ int main(){
 	        }
 	
 	        case 6:{
-				printf("	1 - Use sempre letra mai˙scula, exemplo: B.\n");
-				printf("	2 - Preste atenÁ„o no enunciado.\n");
-				printf("	3 - FaÁa o quiz com calma.\n");
-				printf("	4 - Se n„o souber a resposta de alguma pergunta, coloque qualquer letra do alfabeto que ser· mostrado a resposta correta.\n");
-				printf("	5 - O nome da matÈria est· no comeÁo do enunciado, caso precise revisa-l· posteriormente.\n\n");
-	            break;
+			printf("	1 - Use sempre letra mai√∫scula, exemplo: B.\n");
+			printf("	2 - Preste aten√ß√£o no enunciado.\n");
+			printf("	3 - Fa√ßa o quiz com calma.\n");
+			printf("	4 - Se n√£o souber a resposta de alguma pergunta, coloque qualquer letra do alfabeto que ser√° mostrado a resposta correta.\n");
+			printf("	5 - O nome da mat√©ria est√° no come√ßo do enunciado, caso precise revisa-l√° posteriormente.\n\n");
+	            	break;
 	        }
 	
 	        case 7:{
-	            printf("\n	Bruno Magalh„es de Souza     - 17 anos - SZ3005291\n");
-	            printf("	Caique Martins Da Silva      - 18 anos - SZ3006239\n");
-				printf("	Kauan Linhares Pereira       - 19 anos - SZ3006506\n");
-				printf("	Samuel Bandeira de Oliveira  - 18 anos - SZ3005704\n\n\n");
-	            break;
+			printf("	Kauan Linhares Pereira       - 19 anos - SZ3006506\n");
+	            	break;
 	        }
 	        
 	        default:{
-	            printf("\n    OpÁ„o inv·lida, tente novamente\n\n");
+	            	printf("\n    Op√ß√£o inv√°lida, tente novamente\n\n");
 	        }
 	    }
 	}while(opcao != 0);
